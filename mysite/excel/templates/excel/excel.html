@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="application/vnd.ms-excel; charset=utf-8" />
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr><th colspan="2">User Profile</th></tr>
+        <tr><td>Name</td><td>{{ user_profile.name }}</td></tr>
+        <tr><td>Email</td><td>{{ user_profile.email }}</td></tr>
+        <tr><td>Phone</td><td>{{ user_profile.phone }}</td></tr>
+        <tr><td>Degree</td><td>{{ user_profile.degree }}</td></tr>
+    </table>
+</body>
+</html>
